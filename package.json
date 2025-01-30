@@ -1,0 +1,38 @@
+{
+  "name": "intern-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node build-assets.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.23.0",
+    "@babel/core": "^7.23.3",
+    "@babel/preset-env": "^7.23.3",
+    "autoprefixer": "^10.4.16",
+    "browser-sync": "^2.29.3",
+    "browserslist": "^4.22.1",
+    "cssnano": "^6.0.1",
+    "postcss": "^8.4.31",
+    "sass": "^1.69.5",
+    "terser": "^5.24.0"
+  },
+  "dependencies": {
+  }
+}
