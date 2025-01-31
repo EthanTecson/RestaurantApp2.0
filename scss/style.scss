@@ -25,13 +25,15 @@
 }
 
 .header {
+    
+    .menu-button {
+        ul {
+            display: none;
+        }
 
-    ul {
-        display: none;
+        &.active ul {
+            display: block;
+        }
     }
-
-    .menu-button.active ul {
-        display: block;
-    }
-
+    
 }
