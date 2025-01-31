@@ -23,3 +23,15 @@
     width: 100%;
     height: 40rem;
 }
+
+.header {
+
+    ul {
+        display: none;
+    }
+
+    .menu-button.active ul {
+        display: block;
+    }
+
+}
