@@ -28,6 +28,12 @@
 .header {
     
     .menu-button {
+
+        nav {
+            display: flex;
+            align-items: center;
+        }
+        
         ul {
             display: none;
         }
@@ -36,5 +42,4 @@
             display: block;
         }
     }
-    
 }
