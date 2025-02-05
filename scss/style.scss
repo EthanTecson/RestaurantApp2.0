@@ -29,17 +29,36 @@
     
     .menu-button {
 
+        padding: 1rem 1.5rem 1rem 1.5rem;
+        background-color: #ffd000;
+        border: 0;
+        position: relative;
+
         nav {
             display: flex;
             align-items: center;
+            gap: 0.5em;
         }
         
         ul {
             display: none;
+            z-index: 1;
+            position: absolute;
+            top: 100%;
+            background-color: white;
+            list-style: none;
+            left: 0;
         }
 
         &.active ul {
-            display: block;
+            display: flex;
+            flex-direction: column;
+            align-items: start; 
+        }
+
+        p {
+            font-size: 1.5rem;
+            margin: 0;
         }
     }
 }
