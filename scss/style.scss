@@ -60,7 +60,6 @@
             background-color: white;
             list-style: none;
             left: 0;
-            width: 100%;;
         }
 
         &.active ul {
@@ -189,8 +188,26 @@
         background-color: white;
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); 
         width: 100%;
+        gap: 0.5rem;
 
-        featured--items-card--text {
+        img {
+            padding-top: 1rem;
+            width: auto;
+            max-height: auto; 
+        }
+
+        &--title {
+            font-weight: 600;
+            font-size: 1.5rem;
+            color:#272727;
+            text-shadow: 1px 1px #443c21;
+        }
+
+        &--text {
+            font-weight: 300;
+            font-size: 1rem;
+            color: #7a7a7a;
+            text-shadow: 1px 1px #7a7a7a;
         }
     }
 
