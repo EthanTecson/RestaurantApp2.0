@@ -249,6 +249,23 @@
     }
 
     &--button {
+        display: flex;
+        justify-self: center;
+        flex-direction: column;
+        align-items: center;
+        border: 0;
+        background-color: #ffd000;
+        padding: 1rem;
+    }
 
+    &--button p {
+       font-weight: 600;
+       font-size: 1rem;
+       color:#272727;
+    }
+
+    &--button img {
+        width: 10%;
+        height: 10%;
     }
 }
