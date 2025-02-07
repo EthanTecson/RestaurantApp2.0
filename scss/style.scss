@@ -253,6 +253,11 @@ $large: 991px;
         }
     }
 
+    @media (min-width:$medium){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    } 
+
 }
 
 .featured--taco {
