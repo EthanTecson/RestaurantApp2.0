@@ -1,3 +1,6 @@
+$medium: 768px;
+$large: 991px;
+
 :root {
     font-size: 16px;
     font-family: "Nunito", sans-serif;
@@ -78,9 +81,25 @@
             text-decoration: none;
             color: black;
             font-size: 1rem;
-            margin-right: 1rem;
         }
     }
+
+    @media (min-width:$medium){
+        .menu--button {
+            width: 100%;
+
+            &.active ul {
+                width: 100%;
+            }
+
+            ul li {
+                text-align: center;
+                margin-top: 0.5rem;
+            }
+            
+        }
+        
+    } 
 }
 
 .image--div {
