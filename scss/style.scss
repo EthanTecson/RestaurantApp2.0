@@ -139,14 +139,11 @@
     .hero--item {
         background-color: #ffd000;
         height: 50%;
-        display: grid;
-        grid-template-rows: 75% 25%;
-        grid-template-areas: "price"
-                             "product";
+        display: flex;
+        flex-direction: column;
     }
 
     .hero--price {
-        grid-area: price;
         height: 100%;
         width: 100%;
         font-weight: 500;
@@ -159,7 +156,6 @@
     }
 
     .hero--product {
-        grid-area: product;
         height: 100%;
         width: 100%;
         font-weight: 600;
