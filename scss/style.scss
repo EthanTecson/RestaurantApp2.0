@@ -82,25 +82,25 @@ $large: 991px;
             color: black;
             font-size: 1rem;
         }
-    }
 
-    @media (min-width:$medium){
-        .menu--button {
+        @media (min-width:$medium){
+
             width: 100%;
-
+    
             &.active ul {
                 width: 100%;
             }
-
+    
             ul li {
                 text-align: center;
                 margin-top: 0.5rem;
             }
-            
+                
         }
-        
+            
     } 
 }
+
 
 .image--div {
 
@@ -200,6 +200,15 @@ $large: 991px;
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    @media (min-width:$medium){
+        display: flex;
+        flex-direction: row;        
+
+        .hero--item {
+            width: 100%;
+        }
     }
 }
 
