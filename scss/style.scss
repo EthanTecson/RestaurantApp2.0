@@ -33,76 +33,86 @@ $large: 991px;
     .menu--button {
 
         padding: .7rem .5rem .7rem .5rem;
-        width: 40%;
+        width: 45%;
         background-color: #ffd000;
         border: 0;
-        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 0.5rem;
 
         .menu--svg {
             width: 1rem;
             height: 1rem;
         }
+    }
 
-        nav {
-            display: flex;
-            justify-content: center;
-            gap: 0.5em;
-            width: 100%;
-        }
+    .nav--dropdown {
+        display: none;
+    }
 
-        p {
-            font-size: 1rem;
-            margin: 0;
-        }       
+    .nav--dropdown.active {
+        display: block;
+    }
 
-        ul {
-            display: none;
-            z-index: 10;
-            position: absolute;
-            top: 100%;
-            background-color: white;
-            list-style: none;
-            left: 0;
-        }
+    // nav {
+    //     display: flex;
+    //     justify-content: center;
+    //     gap: 0.5em;
+    //     width: 100%;
+    // }
 
-        &.active ul {
-            display: flex;
-            flex-direction: column;
-        }
+    // p {
+    //     font-size: 1rem;
+    //     margin: 0;
+    // }       
 
-        ul li {
-            border-color: black;
-            border-bottom: 1px solid;
-            text-align: left;
-            padding: .5rem 1rem 1rem 0.5rem;
-        }
+    // ul {
+    //     display: none;
+    //     z-index: 10;
+    //     position: absolute;
+    //     top: 100%;
+    //     background-color: white;
+    //     list-style: none;
+    //     left: 0;
+    // }
 
-        ul li a {
-            text-decoration: none;
-            color: black;
-            font-size: 1rem;
-        }
+    // &.active ul {
+    //     display: flex;
+    //     flex-direction: column;
+    // }
 
-        @media (min-width:$medium){
+    // ul li {
+    //     border-color: black;
+    //     border-bottom: 1px solid;
+    //     text-align: left;
+    //     padding: .5rem 1rem 1rem 0.5rem;
+    // }
 
-            width: 100%;
-    
-            &.active ul {
-                width: 100%;
-            }
-    
-            ul li {
-                text-align: center;
-                margin-top: 0.5rem;
-            }
-                
-        }
+    // ul li a {
+    //     text-decoration: none;
+    //     color: black;
+    //     font-size: 1rem;
+    // }
 
-        @media (min-width:$large){
-            
-        }
-            
-    } 
+    @media (min-width:$medium){
+
+        // .menu--button {
+        //     width: 100%;
+
+        //     &.active ul {
+        //         width: 100%;
+        //     }
+
+        //     ul li {
+        //         text-align: center;
+        //         margin-top: 0.5rem;
+        //     }
+        // }
+    }
+     
+    @media (min-width:$large) {
+    }
 }
 
 
