@@ -407,9 +407,9 @@ $large: 991px;
             }
 
             &--button p {
-            font-weight: 600;
-            font-size: 1rem;
-            color:#272727;
+                font-weight: 600;
+                font-size: 1rem;
+                color:#272727;
             }
 
             &--button img {
@@ -544,6 +544,22 @@ $large: 991px;
 
             img {
                 width: 100%;
+            }
+        }
+    }
+
+    @media (min-width:$large){
+        &--pics{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            width: 100%;
+            gap: 0.5rem;
+
+            img {
+               height: auto; 
+               width: auto;
             }
         }
     }
