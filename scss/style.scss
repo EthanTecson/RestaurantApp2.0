@@ -18,6 +18,8 @@ $large: 991px;
     padding: 3rem;
 }
 
+
+
 .background {
     background: linear-gradient(90deg, rgba(145,63,251,0.804359243697479) 0%, rgba(252,70,107,1) 71%);
     position: absolute;
@@ -190,9 +192,7 @@ $large: 991px;
             align-items: center;
             gap: 0.5rem;
         }
-        
     }
-
 }
 
 .hero {
@@ -202,14 +202,14 @@ $large: 991px;
     gap: 1rem;
     padding: 1rem 0;
 
-    .hero--item {
+    &--item {
         background-color: #ffd000;
         height: 50%;
         display: flex;
         flex-direction: column;
     }
 
-    .hero--price {
+    &--price {
         height: 100%;
         width: 100%;
         font-weight: 500;
@@ -221,7 +221,7 @@ $large: 991px;
         justify-content: center;
     }
 
-    .hero--product {
+    &--product {
         height: 100%;
         width: 100%;
         font-weight: 600;
@@ -238,6 +238,65 @@ $large: 991px;
 
         .hero--item {
             width: 100%;
+        }
+    }
+}
+
+.desktop--hero--view {
+    @media (min-width:$large){
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin: 1rem 0 1rem 0;
+
+        .image--div {
+            width: 75%;
+            margin: 0;
+            padding: 0;
+            align-items: start;
+
+            .name {
+                width: 30%;
+                height: 15%;
+                font-size: 1.3rem;
+                margin-left: 2rem;
+
+                span {
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+
+            .punch--line {
+                width: 20%;
+                height: 10%;
+                font-size: .8rem;
+                margin-left: 2rem;
+                display: flex;
+                white-space: row;
+
+                span {
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+        }
+
+        .hero {
+            width: 25%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            
+            &--price {
+                align-items: end;
+            } 
+            &--product {
+                align-items: start;
+                height: 50%;
+           }
         }
     }
 }
