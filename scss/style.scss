@@ -29,7 +29,7 @@ $large: 991px;
 }
 
 .header {
-    
+
     .menu--button {
 
         padding: .7rem .5rem .7rem .5rem;
@@ -57,7 +57,8 @@ $large: 991px;
 
     .nav--dropdown.active {
         width: 45%;
-        display: block;
+        display: flex;
+        flex-direction: column;
         z-index: 10;
         list-style: none;
         background-color: white;
@@ -79,19 +80,19 @@ $large: 991px;
     }
 
     @media (min-width:$medium){
+        .menu--button {
+            width: 100%;
+        }
 
-        // .menu--button {
-        //     width: 100%;
+        .nav--dropdown.active {
+            width: 100%;
+        }
 
-        //     &.active ul {
-        //         width: 100%;
-        //     }
-
-        //     ul li {
-        //         text-align: center;
-        //         margin-top: 0.5rem;
-        //     }
-        // }
+        li {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
     }
      
     @media (min-width:$large) {
