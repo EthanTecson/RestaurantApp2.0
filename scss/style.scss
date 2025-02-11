@@ -61,7 +61,7 @@ $large: 991px;
     }
 
     .nav--dropdown.active {
-        width: 45%;
+        width: auto;
         display: flex;
         flex-direction: column;
         z-index: 10;
@@ -105,6 +105,33 @@ $large: 991px;
     @media (min-width:$large) {
         .menu--button {
             display: none;
+        }
+
+        .nav--dropdown.active {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            gap: 1rem;
+            background-color: transparent;
+
+            li {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #ffd000;
+                padding: .5rem;
+                width: 100%;
+                border: none;
+            }
+
+            a {
+                text-decoration: none;
+                color: black;
+                font-size: 1rem;
+                font-weight: 550;
+            }
+
         }
 
         .nav--dropdown {
